@@ -1,0 +1,90 @@
+@font-face {
+  font-family: font;
+  src: url("./font.ttf");
+}
+body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+.scPage::-webkit-scrollbar {
+  width: 0!important;
+}
+input, textarea, select, button, Input, Button {
+	outline: none!important;
+  resize: none!important;
+  transition: border 200ms ease-in-out;
+}
+textarea:focus, input:focus {
+}
+input::placeholder, textarea::placeholder {
+}
+.formFloat {
+  background: url('./faq.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  animation: eleFloat 10s infinite;
+  -webkit-animation: eleFloat 10s infinite;
+}
+@keyframes eleFloat {
+  0% {   
+    transform: translateX(5px) translateY(9px) translateZ(0px);
+  }
+  50% {
+    transform: translateX(-23px) translateY(-5px) translateZ(0px);
+  }
+  100% {
+    transform: translateX(5px) translateY(9px) translateZ(0px);
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  .onboardingBg {
+    background-size: 105%;
+  }
+}
+
+@media only screen and (min-width:  1366px) {
+  .padder {
+      padding: 0 2%;
+  }
+}
+@media only screen and (min-width:  1600px) {
+  .padder {
+      padding: 0 5%;
+  }
+}
+
+@media only screen and (min-width:  1700px) {
+  .padder {
+      padding: 0 10%;
+  }
+}
+
+@media only screen and (min-width:  1900px) {
+  .padder {
+      padding: 0 15%;
+  }
+}
+
+@media only screen and (min-width:  2500px) {
+  .padder {
+      padding: 0 25%;
+  }
+}
+@media only screen and (min-width:  3800px) {
+  .padder {
+      padding: 0 30%;
+  }
+}
+
+@media only screen and (min-width:  4070px) {
+  .padder {
+      padding: 0 35%;
+  }
+}
